@@ -10,7 +10,6 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -105,7 +104,7 @@ internal val LocalThemeIsDark = compositionLocalOf { mutableStateOf(true) }
 
 @Composable
 internal fun AppTheme(
-    content: @Composable() () -> Unit
+    content: @Composable () -> Unit
 ) {
     val systemIsDark = isSystemInDarkTheme()
     val isDarkState = remember { mutableStateOf(systemIsDark) }
@@ -113,7 +112,6 @@ internal fun AppTheme(
         LocalThemeIsDark provides isDarkState
     ) {
         val isDark by isDarkState
-        SystemAppearance(!isDark)
         MaterialTheme(
             colorScheme = if (isDark) DarkColorScheme else LightColorScheme,
             typography = AppTypography,
@@ -124,6 +122,3 @@ internal fun AppTheme(
         )
     }
 }
-
-@Composable
-internal expect fun SystemAppearance(isDark: Boolean)

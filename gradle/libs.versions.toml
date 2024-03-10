@@ -1,19 +1,20 @@
 [versions]
 
-kotlin = "1.9.21"
-compose = "1.5.11"
-agp = "8.3.0"
+kotlin = "1.9.22"
+compose = "1.6.0"
+agp = "8.2.2"
 androidx-appcompat = "1.6.1"
-androidx-activityCompose = "1.8.1"
-compose-uitooling = "1.5.4"
-decompose = "2.2.2-compose-experimental"
+androidx-activityCompose = "1.8.2"
+compose-uitooling = "1.6.3"
+decompose = "3.0.0-alpha08"
 napier = "2.7.0"
 buildConfig = "4.1.1"
-kotlinx-coroutines = "1.7.3"
-ktor = "2.3.7"
-kotlinx-serialization = "1.6.2"
+kotlinx-coroutines = "1.8.0"
+ktor = "2.3.9"
+kotlinx-serialization = "1.6.3"
 kotlinx-datetime = "0.5.0"
 koin = "3.5.3"
+orbitCore = "6.1.1"
 
 [libraries]
 
@@ -21,7 +22,7 @@ androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "a
 androidx-activityCompose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 compose-uitooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-uitooling" }
 decompose = { module = "com.arkivanov.decompose:decompose", version.ref = "decompose" }
-decompose-compose = { module = "com.arkivanov.decompose:extensions-compose-jetbrains", version.ref = "decompose" }
+decompose-compose = { module = "com.arkivanov.decompose:extensions-compose", version.ref = "decompose" }
 napier = { module = "io.github.aakira:napier", version.ref = "napier" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
@@ -35,6 +36,8 @@ ktor-client-winhttp = { module = "io.ktor:ktor-client-winhttp", version.ref = "k
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+orbit-core = { module = "org.orbit-mvi:orbit-core", version.ref = "orbitCore" }
 
 [plugins]
 
