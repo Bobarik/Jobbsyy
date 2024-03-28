@@ -17,6 +17,7 @@ kotlin {
         }
     }
 
+    applyDefaultHierarchyTemplate()
     jvm()
 
     sourceSets {

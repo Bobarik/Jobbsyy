@@ -2,6 +2,7 @@ rootProject.name = "Koutline"
 include(":composeApp")
 
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google()
         gradlePluginPortal()
