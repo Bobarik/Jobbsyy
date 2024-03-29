@@ -1,25 +1,15 @@
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
-    alias(libs.plugins.multiplatform)
-    alias(libs.plugins.compose)
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.buildConfig)
-    alias(libs.plugins.kotlinx.serialization)
+    id("koutline.application")
+//    alias(libs.plugins.multiplatform)
+//    alias(libs.plugins.compose)
+//    alias(libs.plugins.android.application)
+//    alias(libs.plugins.buildConfig)
+//    alias(libs.plugins.kotlinx.serialization)
 }
 
 kotlin {
-    androidTarget {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "17"
-            }
-        }
-    }
-
-    applyDefaultHierarchyTemplate()
-    jvm()
-
     sourceSets {
         commonMain.dependencies {
             implementation(projects.core.arch)
@@ -36,10 +26,6 @@ kotlin {
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.kotlinx.datetime)
             implementation(libs.koin.core)
-        }
-
-        commonTest.dependencies {
-            implementation(kotlin("test"))
         }
 
         val androidMain by getting {
@@ -61,7 +47,6 @@ kotlin {
             implementation(libs.kotlinx.coroutines.swing)
             implementation(libs.ktor.client.okhttp)
         }
-
     }
 }
 

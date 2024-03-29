@@ -2,12 +2,13 @@
 
 #Core
 kotlin = "1.9.23"
+compose-compiler = "1.5.11"
 
 #UI
 compose = "1.6.1"
 
 #Android Essentials
-agp = "8.2.2"
+agp = "8.3.1"
 androidx-appcompat = "1.6.1"
 androidx-activityCompose = "1.8.2"
 compose-uitooling = "1.6.4"
@@ -82,9 +83,10 @@ kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serializa
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
 
 #DI
-koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
-koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
-
+koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
+koin-core = { module = "io.insert-koin:koin-core" }
+koin-android = { module = "io.insert-koin:koin-android"}
+koin-compose = { module = "io.insert-koin:koin-compose"}
 #MVI
 orbit-core = { module = "org.orbit-mvi:orbit-core", version.ref = "orbitCore" }
 
@@ -98,5 +100,6 @@ ksp-gradle-plugin = { group = "com.google.devtools.ksp", name = "com.google.devt
 multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 compose = { id = "org.jetbrains.compose", version.ref = "compose" }
 android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
 buildConfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildConfig" }
 kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

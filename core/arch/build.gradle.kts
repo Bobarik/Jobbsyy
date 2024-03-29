@@ -11,17 +11,18 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(compose.runtime)
-            implementation(compose.material3)
-            implementation(compose.materialIconsExtended)
+
             implementation(libs.essenty.lifecycle)
             implementation(libs.essenty.lifecycle.coroutines)
+
             implementation(libs.decompose)
             implementation(libs.decompose.compose)
-            implementation(libs.orbit.core)
+
+            api(libs.orbit.core)
             implementation(libs.napier)
             implementation(libs.kotlinx.coroutines.core)
-            implementation(libs.kotlinx.serialization.json)
-            implementation(libs.kotlinx.datetime)
+
+            implementation(project.dependencies.platform(libs.koin.bom))
             implementation(libs.koin.core)
         }
 
@@ -30,8 +31,6 @@ kotlin {
         }
 
         jvmMain.dependencies {
-            implementation(compose.desktop.common)
-            implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
         }
     }
