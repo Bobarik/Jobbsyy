@@ -14,8 +14,8 @@ fun KotlinMultiplatformExtension.configureMultiplatformApplication(
         }
     }
 
-    applyDefaultHierarchyTemplate()
     jvm()
+    applyDefaultHierarchyTemplate()
 
     sourceSets.apply {
         commonMain.dependencies {

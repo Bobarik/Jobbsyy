@@ -7,7 +7,7 @@ import com.arkivanov.essenty.lifecycle.LifecycleRegistry
 import com.arkivanov.essenty.lifecycle.resume
 import com.vlaskorobogatov.koutline.App
 import com.vlaskorobogatov.koutline.di.AppModule
-import com.vlaskorobogatov.koutline.mvi.RootComponentImpl
+import com.vlaskorobogatov.koutline.root.mvi.RootComponentImpl
 import io.github.aakira.napier.DebugAntilog
 import io.github.aakira.napier.Napier
 import org.koin.core.context.startKoin

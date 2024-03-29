@@ -7,13 +7,14 @@ fun KotlinMultiplatformExtension.configureMultiplatformFeature(
     libs: LibrariesForLibs
 ) {
     androidTarget()
-
+    jvm()
     applyDefaultHierarchyTemplate()
 
     sourceSets.apply {
         commonMain.dependencies {
+            implementation(project(":core:arch"))
+
             implementation(libs.napier)
-            implementation(libs.kotlinx.serialization)
             implementation(libs.kotlinx.coroutines.core)
 
             implementation(project.dependencies.platform(libs.koin.bom))

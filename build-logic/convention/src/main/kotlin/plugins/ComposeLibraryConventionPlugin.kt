@@ -18,13 +18,13 @@ class ComposeLibraryConventionPlugin : Plugin<Project> {
             apply(libs.plugins.compose.get().pluginId)
         }
 
-        extensions.configure<KotlinMultiplatformExtension>() {
+        extensions.configure<KotlinMultiplatformExtension> {
 
-            iosX64()
-            iosArm64()
-            iosSimulatorArm64()
+//            iosX64()
+//            iosArm64()
+//            iosSimulatorArm64()
+            jvm()
             androidTarget()
-
             applyDefaultHierarchyTemplate()
         }
 

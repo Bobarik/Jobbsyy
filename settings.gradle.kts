@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(":core:arch")
+include(":feature:root")

@@ -1,4 +1,4 @@
-package com.vlaskorobogatov.koutline.mvi
+package com.vlaskorobogatov.koutline.root.mvi
 
 import com.vlaskorobogatov.koutline.arch.StateComponent
 

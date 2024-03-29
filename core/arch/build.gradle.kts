@@ -26,10 +26,6 @@ kotlin {
             implementation(libs.koin.core)
         }
 
-        commonTest.dependencies {
-            implementation(kotlin("test"))
-        }
-
         jvmMain.dependencies {
             implementation(libs.kotlinx.coroutines.swing)
         }

@@ -1,5 +1,6 @@
 package plugins
 
+import Config.ApplicationId
 import com.android.build.gradle.LibraryExtension
 import com.vlaskorobogatov.koutline.configureAndroidLibrary
 import com.vlaskorobogatov.koutline.configureMultiplatformFeature
@@ -25,6 +26,8 @@ class FeatureConventionPlugin : Plugin<Project> {
         }
 
         extensions.configure<LibraryExtension> {
+            val featureNamespace = "$ApplicationId.${path.split(':')[1]}"
+            namespace = featureNamespace
             configureAndroidLibrary()
         }
     }

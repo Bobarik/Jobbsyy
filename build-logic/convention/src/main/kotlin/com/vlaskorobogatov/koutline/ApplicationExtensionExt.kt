@@ -52,13 +52,16 @@ fun ApplicationExtension.configureAndroidApplication(
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion
         targetCompatibility = JavaVersion
     }
+
     buildFeatures {
         compose = true
     }
+
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
