@@ -5,9 +5,9 @@ import androidx.compose.ui.window.rememberWindowState
 import com.arkivanov.decompose.DefaultComponentContext
 import com.arkivanov.essenty.lifecycle.LifecycleRegistry
 import com.arkivanov.essenty.lifecycle.resume
-import com.vlaskorobogatov.koutline.App
-import com.vlaskorobogatov.koutline.di.AppModule
-import com.vlaskorobogatov.koutline.root.mvi.RootComponentImpl
+import com.archipelago.jobbsyy.App
+import com.archipelago.jobbsyy.di.AppModule
+import com.archipelago.jobbsyy.root.mvi.RootComponentImpl
 import io.github.aakira.napier.DebugAntilog
 import io.github.aakira.napier.Napier
 import org.koin.core.context.startKoin

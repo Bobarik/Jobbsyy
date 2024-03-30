@@ -1,9 +1,9 @@
 package plugins
 
 import com.android.build.gradle.LibraryExtension
-import com.vlaskorobogatov.koutline.configureAndroidLibrary
-import com.vlaskorobogatov.koutline.configureCompose
-import com.vlaskorobogatov.koutline.libs
+import com.archipelago.jobbsyy.configureAndroidLibrary
+import com.archipelago.jobbsyy.configureCompose
+import com.archipelago.jobbsyy.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure

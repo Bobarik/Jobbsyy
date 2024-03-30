@@ -2,7 +2,7 @@ import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
 
-    id("koutline.application")
+    id("jobbsyy.application")
 }
 
 kotlin {
@@ -12,6 +12,7 @@ kotlin {
             implementation(projects.feature.root)
 
             implementation(compose.runtime)
+            implementation(compose.ui)
             implementation(compose.material3)
             implementation(compose.materialIconsExtended)
             implementation(compose.components.resources)
@@ -41,7 +42,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "com.vlaskorobogatov.koutline.desktopApp"
+            packageName = "com.archipelago.jobbsyy.desktopApp"
             packageVersion = "1.0.0"
         }
     }

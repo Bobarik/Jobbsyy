@@ -2,7 +2,7 @@ import org.gradle.api.JavaVersion.VERSION_17
 
 object Config {
 
-    const val ApplicationId = "com.vlaskorobogatov.koutline"
+    const val ApplicationId = "com.archipelago.jobbsyy"
     const val CompileSdk = 34
     const val MinSdk = 24
     const val TargetSdk = 34

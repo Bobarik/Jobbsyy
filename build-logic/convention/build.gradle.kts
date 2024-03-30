@@ -4,7 +4,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.vlaskorobogatov.koutline"
+group = "com.archipelago.jobbsyy"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -34,19 +34,19 @@ tasks {
 gradlePlugin {
     plugins {
         register("application") {
-            id = "koutline.application"
+            id = "jobbsyy.application"
             implementationClass = "plugins.ApplicationConventionPlugin"
         }
         register("feature") {
-            id = "koutline.feature"
+            id = "jobbsyy.feature"
             implementationClass = "plugins.FeatureConventionPlugin"
         }
         register("library") {
-            id = "koutline.library"
+            id = "jobbsyy.library"
             implementationClass = "plugins.LibraryConventionPlugin"
         }
         register("composeLibrary") {
-            id = "koutline.library.compose"
+            id = "jobbsyy.library.compose"
             implementationClass = "plugins.ComposeLibraryConventionPlugin"
         }
     }

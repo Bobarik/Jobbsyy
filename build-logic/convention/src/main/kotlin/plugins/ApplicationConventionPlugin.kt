@@ -1,9 +1,9 @@
 package plugins
 
 import com.android.build.api.dsl.ApplicationExtension
-import com.vlaskorobogatov.koutline.configureAndroidApplication
-import com.vlaskorobogatov.koutline.configureMultiplatformApplication
-import com.vlaskorobogatov.koutline.libs
+import com.archipelago.jobbsyy.configureAndroidApplication
+import com.archipelago.jobbsyy.configureMultiplatformApplication
+import com.archipelago.jobbsyy.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
