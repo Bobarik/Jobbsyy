@@ -1,9 +1,8 @@
 package com.archipelago.jobbsyy.di
 
-import com.archipelago.jobbsyy.root.mvi.RootComponentImpl
-import org.koin.core.module.dsl.factoryOf
+import com.archipelago.jobssyy.root.di.RootModule
 import org.koin.dsl.module
 
 val AppModule = module {
-    factoryOf(::RootComponentImpl)
+    includes(RootModule)
 }
