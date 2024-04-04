@@ -1,4 +1,4 @@
-package com.archipelago.jobssyy.root.di
+package com.archipelago.jobbsyy.root.di
 
 import com.archipelago.jobbsyy.root.mvi.RootComponentImpl
 import org.koin.core.module.dsl.factoryOf
