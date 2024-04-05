@@ -1,4 +1,4 @@
-rootProject.name = "Koutline"
+rootProject.name = "Jobbsyy"
 include(":composeApp")
 
 pluginManagement {
