@@ -1,8 +1,8 @@
 package plugins
 
+import Config.ApplicationId
 import com.android.build.gradle.LibraryExtension
 import com.archipelago.jobbsyy.configureAndroidLibrary
-import com.archipelago.jobbsyy.configureCompose
 import com.archipelago.jobbsyy.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -19,18 +19,15 @@ class ComposeLibraryConventionPlugin : Plugin<Project> {
         }
 
         extensions.configure<KotlinMultiplatformExtension> {
-
-//            iosX64()
-//            iosArm64()
-//            iosSimulatorArm64()
             jvm()
             androidTarget()
             applyDefaultHierarchyTemplate()
         }
 
         extensions.configure<LibraryExtension> {
+            val featureNamespace = "$ApplicationId.${path.split(':')[1]}"
+            namespace = featureNamespace
             configureAndroidLibrary()
-            configureCompose(libs)
         }
     }
 }

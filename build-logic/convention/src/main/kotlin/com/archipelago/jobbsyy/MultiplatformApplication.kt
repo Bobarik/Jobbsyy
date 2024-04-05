@@ -6,14 +6,7 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 fun KotlinMultiplatformExtension.configureMultiplatformApplication(
     libs: LibrariesForLibs
 ) {
-    androidTarget {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "17"
-            }
-        }
-    }
-
+    androidTarget()
     jvm()
     applyDefaultHierarchyTemplate()
 
@@ -41,6 +34,7 @@ fun KotlinMultiplatformExtension.configureMultiplatformApplication(
             implementation(libs.androidx.activityCompose)
             implementation(libs.compose.uitooling)
             implementation(libs.kotlinx.coroutines.android)
+            implementation(libs.koin.android)
         }
     }
 }

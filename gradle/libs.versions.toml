@@ -1,17 +1,16 @@
 [versions]
 
 #Core
-kotlin = "1.9.23"
-compose-compiler = "1.5.11"
+kotlin = "2.0.0-RC1"
 
 #UI
-compose = "1.6.1"
+compose = "1.6.10-dev1578"
 
 #Android Essentials
-agp = "8.3.1"
+agp = "8.3.2"
 androidx-appcompat = "1.6.1"
 androidx-activityCompose = "1.8.2"
-compose-uitooling = "1.6.4"
+compose-uitooling = "1.6.5"
 
 #Navigation
 decompose = "3.0.0-alpha09"
@@ -22,7 +21,7 @@ essenty = "2.0.0-alpha07"
 #Logging
 napier = "2.7.0"
 
-buildConfig = "4.1.1"
+buildConfig = "4.1.2"
 
 #Async
 kotlinx-coroutines = "1.8.0"
@@ -68,7 +67,7 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
 
-#Netwirking
+#Networking
 ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
 ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
 ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
@@ -85,8 +84,9 @@ kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.
 #DI
 koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core" }
-koin-android = { module = "io.insert-koin:koin-android"}
-koin-compose = { module = "io.insert-koin:koin-compose"}
+koin-android = { module = "io.insert-koin:koin-android" }
+koin-compose = { module = "io.insert-koin:koin-compose" }
+
 #MVI
 orbit-core = { module = "org.orbit-mvi:orbit-core", version.ref = "orbitCore" }
 

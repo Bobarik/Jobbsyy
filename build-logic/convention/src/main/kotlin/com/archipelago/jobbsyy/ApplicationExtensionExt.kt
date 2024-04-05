@@ -8,12 +8,9 @@ import Config.TargetSdk
 import Config.VersionCode
 import Config.VersionName
 import com.android.build.api.dsl.ApplicationExtension
-import org.gradle.accessors.dm.LibrariesForLibs
 import org.gradle.kotlin.dsl.get
 
-fun ApplicationExtension.configureAndroidApplication(
-    libs: LibrariesForLibs
-) {
+fun ApplicationExtension.configureAndroidApplication() {
     namespace = ApplicationId
     compileSdk = Config.CompileSdk
 
@@ -56,13 +53,5 @@ fun ApplicationExtension.configureAndroidApplication(
     compileOptions {
         sourceCompatibility = JavaVersion
         targetCompatibility = JavaVersion
-    }
-
-    buildFeatures {
-        compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
 }

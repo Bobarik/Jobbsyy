@@ -1,7 +1,6 @@
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
-
     id("jobbsyy.application")
 }
 
@@ -9,29 +8,17 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(projects.core.arch)
+            implementation(projects.core.designSystem)
             implementation(projects.feature.root)
 
             implementation(compose.runtime)
             implementation(compose.ui)
-            implementation(compose.material3)
-            implementation(compose.materialIconsExtended)
             implementation(compose.components.resources)
-        }
-
-        androidMain.dependencies {
-            implementation(libs.androidx.appcompat)
-            implementation(libs.androidx.activityCompose)
-            implementation(libs.compose.uitooling)
-            implementation(libs.kotlinx.coroutines.android)
-            implementation(libs.ktor.client.okhttp)
-            implementation(libs.koin.android)
         }
 
         jvmMain.dependencies {
             implementation(compose.desktop.common)
             implementation(compose.desktop.currentOs)
-            implementation(libs.kotlinx.coroutines.swing)
-            implementation(libs.ktor.client.okhttp)
         }
     }
 }

@@ -4,7 +4,6 @@ import Config.CompileSdk
 import Config.JavaVersion
 import Config.MinSdk
 import com.android.build.gradle.LibraryExtension
-import org.gradle.accessors.dm.LibrariesForLibs
 import org.gradle.kotlin.dsl.get
 
 fun LibraryExtension.configureAndroidLibrary() {
@@ -47,11 +46,4 @@ fun LibraryExtension.configureAndroidLibrary() {
         sourceCompatibility = JavaVersion
         targetCompatibility = JavaVersion
     }
-}
-
-fun LibraryExtension.configureCompose(
-    libs: LibrariesForLibs
-) {
-    buildFeatures.compose = true
-    composeOptions.kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
 }
