@@ -1,5 +1,6 @@
 package plugins
 
+import Config.ApplicationId
 import com.android.build.gradle.LibraryExtension
 import com.archipelago.jobbsyy.configureAndroidLibrary
 import com.archipelago.jobbsyy.libs
@@ -16,14 +17,15 @@ class LibraryConventionPlugin : Plugin<Project> {
             apply(libs.plugins.android.library.get().pluginId)
         }
 
-        extensions.configure<KotlinMultiplatformExtension>() {
-
+        extensions.configure<KotlinMultiplatformExtension> {
             jvm()
             androidTarget()
             applyDefaultHierarchyTemplate()
         }
 
         extensions.configure<LibraryExtension> {
+            val featureNamespace = "$ApplicationId.${path.split(':')[1]}"
+            namespace = featureNamespace
             configureAndroidLibrary()
         }
     }

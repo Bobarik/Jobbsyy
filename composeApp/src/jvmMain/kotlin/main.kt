@@ -33,7 +33,7 @@ fun main() {
 
     application {
         Window(
-            title = "Koutline",
+            title = "Jobbsyy",
             state = rememberWindowState(width = 800.dp, height = 600.dp),
             onCloseRequest = ::exitApplication,
         ) {

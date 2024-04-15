@@ -25,7 +25,7 @@ class ApplicationConventionPlugin : Plugin<Project> {
         }
 
         extensions.configure<ApplicationExtension> {
-            configureAndroidApplication(libs)
+            configureAndroidApplication()
         }
     }
 }

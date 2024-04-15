@@ -1,30 +1,19 @@
 package com.archipelago.jobbsyy
 
-import Config
-import Config.ApplicationId
+import Config.CompileSdk
 import Config.JavaVersion
 import Config.MinSdk
-import Config.TargetSdk
-import Config.VersionCode
-import Config.VersionName
-import com.android.build.api.dsl.ApplicationExtension
-import org.gradle.accessors.dm.LibrariesForLibs
+import com.android.build.gradle.LibraryExtension
 import org.gradle.kotlin.dsl.get
 
-fun ApplicationExtension.configureAndroidApplication(
-    libs: LibrariesForLibs
-) {
-    namespace = ApplicationId
-    compileSdk = Config.CompileSdk
+fun LibraryExtension.configureAndroidLibrary() {
+    compileSdk = CompileSdk
 
-    defaultConfig {
-        minSdk = MinSdk
-        targetSdk = TargetSdk
+    defaultConfig.minSdk = MinSdk
 
-        applicationId = ApplicationId
-
-        versionCode = VersionCode
-        versionName = VersionName
+    compileOptions {
+        sourceCompatibility = JavaVersion
+        targetCompatibility = JavaVersion
     }
 
     sourceSets["main"].apply {
@@ -56,13 +45,5 @@ fun ApplicationExtension.configureAndroidApplication(
     compileOptions {
         sourceCompatibility = JavaVersion
         targetCompatibility = JavaVersion
-    }
-
-    buildFeatures {
-        compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
 }
