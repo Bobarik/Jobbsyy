@@ -10,6 +10,8 @@ kotlin {
             implementation(projects.core.arch)
             implementation(projects.core.designSystem)
             implementation(projects.feature.root)
+            implementation(projects.feature.login)
+            implementation(projects.feature.home)
 
             implementation(compose.runtime)
             implementation(compose.ui)
