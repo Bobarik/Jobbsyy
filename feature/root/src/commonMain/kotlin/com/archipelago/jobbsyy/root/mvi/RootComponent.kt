@@ -1,10 +1,14 @@
 package com.archipelago.jobbsyy.root.mvi
 
-import com.archipelago.jobbsyy.arch.StateComponent
+import com.arkivanov.decompose.router.stack.ChildStack
+import com.arkivanov.decompose.value.Value
 
-interface RootComponent : StateComponent<RootState, Nothing> {
+interface RootComponent {
 
-    fun onLoginChanged(login: String)
-    fun onPasswordChanged(password: String)
-    fun onPasswordVisibilityChanged()
+    val childStack: Value<ChildStack<*, Child>>
+
+    sealed class Child {
+        class LoginChild(val component: LoginComponent) : Child()
+        class HomeChild(val component: HomeComponent) : Child()
+    }
 }
