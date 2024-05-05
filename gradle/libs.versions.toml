@@ -1,22 +1,22 @@
 [versions]
 
 #Core
-kotlin = "2.0.0-RC1"
+kotlin = "2.0.0-RC2"
 
 #UI
-compose = "1.6.10-dev1578"
+compose = "1.6.10-rc01"
 
 #Android Essentials
 agp = "8.3.2"
 androidx-appcompat = "1.6.1"
-androidx-activityCompose = "1.8.2"
-compose-uitooling = "1.6.5"
+androidx-activityCompose = "1.9.0"
+compose-uitooling = "1.6.7"
 
 #Navigation
-decompose = "3.0.0-beta01"
+decompose = "3.0.0"
 
 #Lifecycle binds for multiplatform
-essenty = "2.0.0-beta01"
+essenty = "2.0.0"
 
 #Logging
 napier = "2.7.1"
@@ -39,7 +39,7 @@ kotlinx-datetime = "0.5.0"
 koin = "3.5.6"
 
 #MVI
-orbitCore = "7.0.1"
+orbitCore = "7.1.0"
 
 #KSP
 ksp = "1.9.23-1.0.19"
@@ -98,8 +98,9 @@ ksp-gradle-plugin = { group = "com.google.devtools.ksp", name = "com.google.devt
 [plugins]
 
 multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
-compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+compose-library = { id = "org.jetbrains.compose", version.ref = "compose" }
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 buildConfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildConfig" }
 kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

@@ -2,7 +2,6 @@ package com.archipelago.jobbsyy.arch
 
 import org.orbitmvi.orbit.ContainerHost
 import org.orbitmvi.orbit.annotation.OrbitDsl
-import org.orbitmvi.orbit.annotation.OrbitExperimental
 import org.orbitmvi.orbit.syntax.simple.SimpleContext
 import org.orbitmvi.orbit.syntax.simple.blockingIntent
 import org.orbitmvi.orbit.syntax.simple.intent
@@ -14,7 +13,6 @@ fun <STATE : BaseState> ContainerHost<STATE, *>.reduce(
     transform: SimpleContext<STATE>.() -> STATE
 ) = intent { reduce(transform) }
 
-@OptIn(OrbitExperimental::class)
 @OrbitDsl
 fun <STATE : BaseState> ContainerHost<STATE, *>.blockingReduce(
     transform: SimpleContext<STATE>.() -> STATE

@@ -1,4 +1,4 @@
-package com.archipelago.jobbsyy.root.mvi
+package com.archipelago.jobbsyy.home.component
 
 import com.archipelago.jobbsyy.arch.ContainerComponent
 import com.arkivanov.decompose.ComponentContext
@@ -15,7 +15,5 @@ class HomeComponentImpl(
         //TODO
     }
 
-    private fun onNavigateBack() {
-        onBackClicked()
-    }
+    private fun onNavigateBack() = onBackClicked()
 }

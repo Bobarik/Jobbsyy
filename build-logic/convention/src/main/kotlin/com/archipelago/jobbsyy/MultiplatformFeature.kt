@@ -13,6 +13,7 @@ fun KotlinMultiplatformExtension.configureMultiplatformFeature(
     sourceSets.apply {
         commonMain.dependencies {
             implementation(project(":core:arch"))
+            implementation(project(":core:navigation"))
 
             implementation(libs.napier)
             implementation(libs.kotlinx.coroutines.core)
