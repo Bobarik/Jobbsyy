@@ -1,4 +1,4 @@
-package com.archipelago.jobbsyy.root.mvi
+package com.archipelago.jobbsyy.home.component
 
 import com.archipelago.jobbsyy.arch.BaseState
 

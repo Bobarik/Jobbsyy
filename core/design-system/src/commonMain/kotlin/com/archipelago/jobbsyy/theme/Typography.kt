@@ -15,10 +15,8 @@ import jobbsyy.core.design_system.generated.resources.josefin_sans_400
 import jobbsyy.core.design_system.generated.resources.josefin_sans_500
 import jobbsyy.core.design_system.generated.resources.josefin_sans_600
 import jobbsyy.core.design_system.generated.resources.josefin_sans_700
-import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.Font
 
-@OptIn(ExperimentalResourceApi::class)
 val JosefinSans
     @Composable
     get() = FontFamily(

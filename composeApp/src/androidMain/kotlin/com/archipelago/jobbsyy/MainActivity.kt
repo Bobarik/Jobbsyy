@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.arkivanov.decompose.defaultComponentContext
-import com.archipelago.jobbsyy.root.mvi.RootComponent
+import com.archipelago.jobbsyy.root.component.RootComponent
 import org.koin.android.ext.android.inject
 import org.koin.core.parameter.parametersOf
 

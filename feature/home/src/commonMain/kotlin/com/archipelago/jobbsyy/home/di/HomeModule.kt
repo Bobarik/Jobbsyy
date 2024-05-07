@@ -1,7 +1,7 @@
-package com.archipelago.jobbsyy.root.di
+package com.archipelago.jobbsyy.home.di
 
-import com.archipelago.jobbsyy.root.mvi.HomeComponent
-import com.archipelago.jobbsyy.root.mvi.HomeComponentImpl
+import com.archipelago.jobbsyy.home.component.HomeComponent
+import com.archipelago.jobbsyy.home.component.HomeComponentImpl
 import org.koin.core.module.dsl.factoryOf
 import org.koin.dsl.bind
 import org.koin.dsl.module

@@ -1,4 +1,4 @@
-package com.archipelago.jobbsyy.root.mvi
+package com.archipelago.jobbsyy.login.component
 
 import com.archipelago.jobbsyy.arch.ContainerComponent
 import com.archipelago.jobbsyy.arch.blockingReduce

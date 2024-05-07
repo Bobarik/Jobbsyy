@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.multiplatform)
-    alias(libs.plugins.compose)
+    alias(libs.plugins.compose.library)
+    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.buildConfig)
     alias(libs.plugins.kotlinx.serialization)
 }

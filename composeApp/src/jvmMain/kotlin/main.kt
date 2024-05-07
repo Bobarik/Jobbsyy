@@ -4,7 +4,7 @@ import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import com.archipelago.jobbsyy.App
 import com.archipelago.jobbsyy.di.AppModule
-import com.archipelago.jobbsyy.root.mvi.RootComponentImpl
+import com.archipelago.jobbsyy.root.component.RootComponentImpl
 import com.arkivanov.decompose.DefaultComponentContext
 import com.arkivanov.essenty.lifecycle.LifecycleRegistry
 import com.arkivanov.essenty.lifecycle.resume
